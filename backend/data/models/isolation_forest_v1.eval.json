@@ -1,0 +1,64 @@
+{
+  "model_name": "IsolationForest",
+  "model_version": "1.0.0",
+  "test_samples": 16999,
+  "benign_samples": 6819,
+  "anomaly_samples": 10180,
+  "decision_threshold": 0.5,
+  "roc_auc": 0.7154,
+  "precision": 0.9019,
+  "recall": 0.3659,
+  "f1_score": 0.5206,
+  "false_positive_rate": 0.0594,
+  "true_negatives": 6414,
+  "false_positives": 405,
+  "false_negatives": 6455,
+  "true_positives": 3725,
+  "confusion_matrix": [
+    [
+      6414,
+      405
+    ],
+    [
+      6455,
+      3725
+    ]
+  ],
+  "categories": {
+    "BENIGN": {
+      "count": 6819,
+      "detection_rate": 0.0594,
+      "avg_anomaly_score": 0.1445
+    },
+    "Bot": {
+      "count": 590,
+      "detection_rate": 0.0254,
+      "avg_anomaly_score": 0.0902
+    },
+    "BruteForce": {
+      "count": 830,
+      "detection_rate": 0.0,
+      "avg_anomaly_score": 0.1921
+    },
+    "DoS": {
+      "count": 5711,
+      "detection_rate": 0.6419,
+      "avg_anomaly_score": 0.5067
+    },
+    "Infiltration": {
+      "count": 11,
+      "detection_rate": 0.8182,
+      "avg_anomaly_score": 0.5502
+    },
+    "PortScan": {
+      "count": 2384,
+      "detection_rate": 0.0013,
+      "avg_anomaly_score": 0.058
+    },
+    "WebAttack": {
+      "count": 654,
+      "detection_rate": 0.0489,
+      "avg_anomaly_score": 0.1304
+    }
+  }
+}

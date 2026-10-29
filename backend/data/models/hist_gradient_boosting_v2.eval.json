@@ -1,0 +1,68 @@
+{
+  "model_name": "HistGradientBoosting",
+  "model_version": "2.0.0",
+  "model_type": "Supervised (HistGradientBoosting)",
+  "test_samples": 14166,
+  "benign_samples": 5683,
+  "anomaly_samples": 8483,
+  "decision_threshold": 0.5,
+  "roc_auc": 0.996,
+  "pr_auc": 0.9972,
+  "precision": 0.9681,
+  "recall": 0.9776,
+  "f1_score": 0.9728,
+  "false_positive_rate": 0.048,
+  "inference_latency_us": 8.35,
+  "train_duration_sec": 3.41,
+  "true_negatives": 5410,
+  "false_positives": 273,
+  "false_negatives": 190,
+  "true_positives": 8293,
+  "confusion_matrix": [
+    [
+      5410,
+      273
+    ],
+    [
+      190,
+      8293
+    ]
+  ],
+  "categories": {
+    "BENIGN": {
+      "count": 5683,
+      "detection_rate": 0.952,
+      "avg_anomaly_score": 0.0638
+    },
+    "Bot": {
+      "count": 491,
+      "detection_rate": 0.8819,
+      "avg_anomaly_score": 0.827
+    },
+    "BruteForce": {
+      "count": 692,
+      "detection_rate": 0.9032,
+      "avg_anomaly_score": 0.8891
+    },
+    "DoS": {
+      "count": 4759,
+      "detection_rate": 0.9937,
+      "avg_anomaly_score": 0.9741
+    },
+    "Infiltration": {
+      "count": 9,
+      "detection_rate": 0.7778,
+      "avg_anomaly_score": 0.6847
+    },
+    "PortScan": {
+      "count": 1987,
+      "detection_rate": 0.9995,
+      "avg_anomaly_score": 0.9951
+    },
+    "WebAttack": {
+      "count": 545,
+      "detection_rate": 0.9413,
+      "avg_anomaly_score": 0.8854
+    }
+  }
+}
